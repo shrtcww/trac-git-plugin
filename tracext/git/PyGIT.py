@@ -6,7 +6,11 @@
 
 from __future__ import with_statement
 
-from future27 import namedtuple
+try:
+    from collections import namedtuple
+except ImportError:
+    from future27 import namedtuple
+
 
 import os, re, sys, time, weakref
 from collections import deque
