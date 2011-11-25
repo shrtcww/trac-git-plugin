@@ -23,8 +23,8 @@ from datetime import datetime
 import sys
 import os
 
-if not sys.version_info[:2] >= (2, 5):
-    raise TracError("Python >= 2.5 dependancy not met")
+if not sys.version_info[:2] >= (2, 6):
+    raise TracError("Python >= 2.6 dependancy not met")
 
 import PyGIT
 
